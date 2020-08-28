@@ -1,7 +1,7 @@
 function vital_bpm(bpm){
     if(bpm<70 || bpm>150){
             console.log("Patient has abnormal bpm");
-            console.log("Attention required");
+            console.log("Attention required..");
             return false;
         }
     else{
