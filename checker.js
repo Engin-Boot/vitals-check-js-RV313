@@ -10,8 +10,6 @@ const { vital_respRate } = require('./respRate.js');
     function vitalsAreOk(bpm, spo2, respRate){
      return (vital_bpm(bpm) && vital_spo2(spo2) && vital_respRate(respRate));
     }
-    
-}
 
 expect(vitalsAreOk(100, 95, 70)).to.be.true;
 expect(vitalsAreOk(50, 95, 70)).to.be.false;
