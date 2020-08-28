@@ -13,4 +13,4 @@ function vital_spo2(spo2)
     }
 }
 
-export default vital_spo2;
+module.exports= vital_spo2;
