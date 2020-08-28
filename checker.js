@@ -13,5 +13,21 @@ const { vital_respRate } = require('./respRate.js');
 
 expect(vitalsAreOk(100, 95, 70)).to.be.true;
 expect(vitalsAreOk(50, 95, 70)).to.be.false;
+expect(vitalsAreOk(100, 95, 70)).to.be.true;
+expect(vitalsAreOk(50, 87, 70)).to.be.false;
+
+expect(vitalsAreOk(20, 95, 70)).to.be.false;
+expect(vitalsAreOk(75, 20, 70)).to.be.false;
+expect(vitalsAreOk(75, 95, 25)).to.be.false;
+
+expect(vitalsAreOk(20, 15, 70)).to.be.false; 
+expect(vitalsAreOk(20, 105, 25)).to.be.false;
+expect(vitalsAreOk(75, 87, 25)).to.be.false; 
+
+expect(vitalsAreOk(120, 55, 25)).to.be.false;
+
+
+
+
 
 console.log("Finished Checking");
