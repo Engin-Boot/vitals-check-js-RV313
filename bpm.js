@@ -12,5 +12,4 @@ function vital_bpm(bpm)
         return true;
     }
 } 
-
-export default vital_bpm;
+module.exports = vital_bpm;
