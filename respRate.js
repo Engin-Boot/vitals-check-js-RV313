@@ -13,4 +13,4 @@ function vital_respRate(respRate)
     }
 }
 
-export default vital_respRate;
+module.exports = {vital_respRate : vital_respRate};

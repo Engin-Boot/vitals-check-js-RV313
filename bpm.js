@@ -13,4 +13,4 @@ function vital_bpm(bpm)
     }
 } 
 
-export default vital_bpm;
+module.exports = {vital_bpm : vital_bpm};
